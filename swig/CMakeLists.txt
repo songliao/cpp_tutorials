@@ -10,4 +10,4 @@ find_package(JNI)
 swig_add_library(exampleJava LANGUAGE java SOURCES example.i)
 
 target_include_directories(exampleJava PUBLIC ${JNI_INCLUDE_DIRS})
-target_link_libraries(exampleJava PUBLIC exampleCPP)
+target_link_libraries(exampleJava PRIVATE exampleCPP)
