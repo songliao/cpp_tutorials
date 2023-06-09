@@ -7,6 +7,6 @@ set(CXX_STANDARD_REQUIRED True)
 
 include_directories(include)
 
-add_subdirectory(swig)
 add_subdirectory(src)
+add_subdirectory(swig)
 add_subdirectory(openmp)
